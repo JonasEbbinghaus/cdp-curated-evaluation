@@ -1,0 +1,8 @@
+resources:
+  pipelines:
+    evaluation_pipeline:
+      name: evaluation_pipeline
+      target: evaluation_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../../src/dlt_pipeline.ipynb
